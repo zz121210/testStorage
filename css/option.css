@@ -1,0 +1,22 @@
+body{
+    margin:0;
+}
+
+#mainlogo{
+    width:500px;
+    height: 121px;
+    margin:0 auto;
+    
+}
+
+.adBox1, .adBox2{
+    position: sticky;
+    top:200px;
+    width:350px;
+    height: 500px;
+    border:1px solid;
+}
+
+li{
+    list-style: none;
+}
