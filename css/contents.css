@@ -16,11 +16,17 @@
 
 #contents>li{
     width:300px;
-    height: 200px;
+    height: 250px;
     margin-left:20px;
     margin-bottom:20px;
     background: white;
     border:1px dotted;
+    text-align: center;
+}
+
+#contents>li img{
+    max-width: 300px;
+    max-height: 300px;
 }
 
 @media ( max-width: 1665px ) {

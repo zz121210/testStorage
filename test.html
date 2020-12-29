@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5feb112352e012a1"></script>
+
+
     <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
     <link rel="icon" href="logo/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -18,105 +22,42 @@
     <link rel="stylesheet" type="text/css" href="css/contents.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href="css/option.css">
-    <style>
-        #testWrapper{
-            box-shadow: 1px 1px 10px 1px gray;
-            height:780px;
-            margin:20px;
-            background-color: white;
-            padding-top:30px;
-        }
-        #testBox{
-            margin:0 auto;
-            width:700px;
-            height: 745px;
-            background-color: rgb(235, 201, 139);
-        }
-        #testBox #text{
-            font-size:40px;
-            text-align: center;
-        }
-
-        #testBox #bingoBoard{
-            display:flex;
-            flex-flow:wrap;
-            margin:0 auto;
-            width:625px;
-            height:625px; 
-        }
-        #bingoBoard button{
-            width:120px;
-            height: 120px;
-            word-break:break-all;      
-            border-top-width: 0px;
-            padding-right: 0px;
-            padding-bottom: 0px;
-            padding-top: 0px;
-            padding-left: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-            border-bottom-width: 0px;
-            background-color: white;
-            margin:2px;
-            color:black;
-        }
-
-        #testBox input[type="submit"]{
-            margin-top:10px;
-            margin-left:50px;
-            width:600px;
-            height:50px;
-        }
-        #result{
-            text-align: center;
-            display: none;
-            width: 1000px;
-            height: 625px;
-            background-color: whitesmoke;
-            margin:0 auto;
-            margin-top:20px;
-        }
-
-        #highLevel, #middleLevel, #lowLevel{
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/contents/bingo.css">
     <script>
         
         alpa=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-        gold = 0;
-        
+        count = 0;
         function bingo(N){
             let btn =document.querySelector('#bingoBoard button:nth-child('+N+')');
             if(alpa[N] == 0){
-                gold++;
+                count++;
                 alpa[N] = 1;
                 btn.style.backgroundColor="black";
                 btn.style.color="white";
-                console.log(gold);
+                console.log(count);
             }else{
-                gold--;
+                count--;
                 alpa[N] = 0;
                 btn.style.backgroundColor="white";
                 btn.style.color="black";
-                console.log(gold);
+                console.log(count);
             }
         }
 
         function result(){
                 document.querySelector('#testBox').style.display='none';
                 document.querySelector('#result').style.display='block';
-                if(gold>20){
+                if(count>20){
                     document.querySelector('#highLevel').style.display='block';
                     document.querySelector('#middleLevel').style.display='none';
                     document.querySelector('#lowLevel').style.display='none';
                     document.querySelector('#not').style.display='none';
-                }else if(gold>10){
+                }else if(count>10){
                     document.querySelector('#highLevel').style.display='none';
                     document.querySelector('#middleLevel').style.display='block';
                     document.querySelector('#lowLevel').style.display='none';
                     document.querySelector('#not').style.display='none';
-                }else if(gold > 1){
+                }else if(count > 1){
                     document.querySelector('#highLevel').style.display='none';
                     document.querySelector('#middleLevel').style.display='none';
                     document.querySelector('#lowLevel').style.display='block';
@@ -195,6 +136,13 @@
                 </h4>
                 <img src="image/goldSpoon/not.jpg" alt="">
             </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<div class="addthis_inline_share_toolbox"></div>
+<input id="retry" type="submit" value="재시도 하기" 
+onclick="
+location.reload(true);
+location.href = location.href;
+history.go(0);">
         </div>
     </div>
     

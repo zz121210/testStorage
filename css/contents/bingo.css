@@ -1,0 +1,70 @@
+        #testWrapper{
+            box-shadow: 1px 1px 10px 1px gray;
+            height:780px;
+            margin:20px;
+            background-color: white;
+            padding-top:30px;
+        }
+        #testBox{
+            margin:0 auto;
+            width:700px;
+            height: 745px;
+            background-color: rgb(235, 201, 139);
+        }
+        #testBox #text{
+            font-size:40px;
+            text-align: center;
+        }
+
+        #testBox #bingoBoard{
+            display:flex;
+            flex-flow:wrap;
+            margin:0 auto;
+            width:625px;
+            height:625px; 
+        }
+        #bingoBoard button{
+            width:120px;
+            height: 120px;
+            word-break:break-all;      
+            border-top-width: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            background-color: white;
+            margin:2px;
+            color:black;
+        }
+
+        #testBox input[type="submit"]{
+            margin-top:10px;
+            margin-left:50px;
+            width:600px;
+            height:50px;
+        }
+        #result{
+            text-align: center;
+            display: none;
+            width: 1000px;
+            height: 700px;
+            background-color: whitesmoke;
+            margin:0 auto;
+            margin-top:20px;
+            font-size:30px;
+            color:black;
+        }
+
+        #highLevel, #middleLevel, #lowLevel{
+            display: none;
+        }
+
+        #retry{
+            width:340px;
+            height: 50px;
+            cursor:pointer;
+            background-color: white;
+        }
