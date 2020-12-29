@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    background-color: rgb(255, 255, 251);
+}
+
+#mainlogo{
+    width:500px;
+    height: 121px;
+    margin:0 auto;
+    margin-bottom:30px;
+    
+}
+
+.adBox1, .adBox2{
+    flex-shrink: 0;
+    position: sticky;
+    top:200px;
+    width:300px;
+    height: 500px;
+    border:1px dotted;
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
