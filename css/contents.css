@@ -13,13 +13,7 @@
     box-shadow: 1px 1px 10px 1px gray;
     background-color: white;
 }
-@media ( max-width: 1459px ) {
-    #contents{
-        width: 659px;
-        flex-shrink: 0;
 
-    }
-}
 #contents>li{
     width:300px;
     height: 200px;
@@ -27,4 +21,12 @@
     margin-bottom:20px;
     background: white;
     border:1px dotted;
+}
+
+@media ( max-width: 1665px ) {
+    #contents{
+        width: 659px;
+        flex-shrink: 0;
+
+    }
 }
