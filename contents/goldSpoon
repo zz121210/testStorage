@@ -66,8 +66,7 @@
                 <img src="image/goldSpoon/not.jpg" alt="">
             </div>
 
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_mlup"></div>
+                <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_bnxd"></div>
             
 <input id="retry" type="submit" value="재시도 하기" onclick="retry()">
         </div>

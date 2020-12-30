@@ -1,0 +1,74 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="testWrapper">
+        <div id="testBox" style="background-color: skyblue;">
+            <div id="text"><b> 오타쿠 테스트 </b></div> 
+            <div id="bingoBoard">
+                <button onclick="bingo(1)">노래방에서 애니송을 불러본 적이 있다.</button>
+                <button onclick="bingo(2)">일본어를 공부했거나 약간은 할 수 있다.</button>
+                <button onclick="bingo(3)">후속작을 기다리는 애니메이션이 있다.</button>
+                <button onclick="bingo(4)">3번 이상 본 애니가 있다.</button>
+                <button onclick="bingo(5)">최애 성우가 있다.</button>
+                <button onclick="bingo(6)">애니 제작사 이름을 10개 이상 말할수 있다.</button>
+                <button onclick="bingo(7)">애니 피규어나 굿즈가 방에 있다.</button>
+                <button onclick="bingo(8)">애니 관련 행사에 참석한 적이 있다.</button>
+                <button onclick="bingo(9)">취미가 뭐냐고 물어봤을 때 얼버무린 적이 있다.</button>
+                <button onclick="bingo(10)">미연시나 가챠겜을 해본 적이 있다.</button>
+                <button onclick="bingo(11)">일본 가서 성지 순례를 한 적이 있다.</button>
+                <button onclick="bingo(12)">애니 프사를 해본 적이 있다.</button>
+                <button onclick="bingo(13)">애니 감독 이름을 5명 이상 말할 수 있다.</button>
+                <button onclick="bingo(14)">2쿨 분량을 하루만에 다 본 적이 있다.</button>
+                <button onclick="bingo(15)">혼모노를 욕 먹는 걸 보고 부끄러웠던 적이 있다.</button>
+                <button onclick="bingo(16)">3D보다 2D가 좋다.</button>
+                <button onclick="bingo(17)">애니를 보기 위해 OTT를 구독 하고 있다.</button>
+                <button onclick="bingo(18)">애니 캐릭터를 핸드폰에 저장 해놨다.</button>
+                <button onclick="bingo(19)">원화와 동화의 차이점이 뭔지 안다.</button>
+                <button onclick="bingo(20)">애니 관련 톡방에 들어가 있다.</button>
+                <button onclick="bingo(21)">분기마다 애니 기대작을 정리 한다.</button>
+                <button onclick="bingo(22)">모쏠이다.</button>
+                <button onclick="bingo(23)">애니 속 세계에 들어가는 상상을 해본 적이있다.</button>
+                <button onclick="bingo(24)">난 딱히 씹덕은 아니다.</button>
+                <button onclick="bingo(25)">장문으로 애니 리뷰를 적어본 적이 있다.</button>
+            </div>
+            <input type="submit" value="테스트 완료" onclick=" result()">
+        </div>
+        <div id="result">
+            <div id="highLevel">
+                <h4>
+                    당신은 진정한 파오운술사 입니다
+                </h4>
+                <img src="image/otaku/highLevel.jpg" alt="">
+            </div>
+            <div id="middleLevel">
+                <h4>
+                    당신은 애니 이야기만 나오면 급발진 합니다. <br>
+                    취미는 취미일뿐 과몰입 하지 맙시다.
+                    
+                </h4>
+                <img src="image/otaku/middleLevel.gif" alt="">
+            </div>
+            <div id="lowLevel">
+                <h4>
+                    당신은 오타쿠의 자질이 보입니다! <br>
+                    자신이 오타쿠라는것을 들킬까봐 걱정합니다.
+                </h4>
+                <img src="image/otaku/lowLevel.gif" alt="">
+            </div>
+            <div id="not">
+                <h4>
+                    당신은 애니에 관심이 없는 사람입니다. <br>
+                    오타쿠는 오타쿠입니다. 그들을 존중 해줍시다.
+                </h4>
+                <img src="image/otaku/not.jpg" alt="">
+            </div>
+
+                
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_mlup"></div>
+                <input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+                
+        </div>
+    </div>
