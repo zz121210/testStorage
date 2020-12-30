@@ -40,7 +40,7 @@
     }
 }
 
-@media ( max-width: 1250px ) {
+@media ( max-width: 1390px ) {
     #slider>li:nth-child(4){
         display:none;
     }

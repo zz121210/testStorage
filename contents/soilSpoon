@@ -1,0 +1,72 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="testWrapper">
+        <div id="testBox" style="background-color: rgb(122, 100, 0);">
+            <div id="text"><b> 흙수저 테스트 </b></div> 
+            <div id="bingoBoard">
+                <button onclick="bingo(1)">화장실에 물 받는 대야 있음</button>
+                <button onclick="bingo(2)">연립주택 살고 있다.</button>
+                <button onclick="bingo(3)">세뱃돈 10만원 단위 못 넘겨봄</button>
+                <button onclick="bingo(4)">알바 해본 적 있음</button>
+                <button onclick="bingo(5)">부모님 정기적 건강검진 안 받음</button>
+                <button onclick="bingo(6)">집에 욕조 없음</button>
+                <button onclick="bingo(7)">집에 장판 뜨거나 뜯긴 곳 있음</button>
+                <button onclick="bingo(8)">부모님 취미 생활 없음</button>
+                <button onclick="bingo(9)">부모님이 자식 교육에 집착이 심함</button>
+                <button onclick="bingo(10)">브라운관 TV나 30인치 평면TV</button>
+                <button onclick="bingo(11)">냉동실에 비닐 안에 든 뭔가가 많음</button>
+                <button onclick="bingo(12)">부모님이 음식 남기지 말라고 잔소리 한다.</button>
+                <button onclick="bingo(13)">가계 부채 있음</button>
+                <button onclick="bingo(14)">고기 요리에 물 넣는 요리 자주 해먹음</button>
+                <button onclick="bingo(15)">중고나라 거래 해본 적 있음</button>
+                <button onclick="bingo(16)">엄마 아빠 이혼함</button>
+                <button onclick="bingo(17)">1년에 신발 한 두개 번갈아 신음</button>
+                <button onclick="bingo(18)">식탁 아래 식탁보 비닐로 됨</button>
+                <button onclick="bingo(19)">집에 비데 없음</button>
+                <button onclick="bingo(20)">에어컨 잘 안 틀거나 없음</button>
+                <button onclick="bingo(21)">본가가 월세나 1억 이하 전세</button>
+                <button onclick="bingo(22)">인터넷 쇼핑시 최저가 찾느라 시간 투자함</button>
+                <button onclick="bingo(23)">차 없거나 연식 오래됨(7년 이상)</button>
+                <button onclick="bingo(24)">옷장 안에 유행 지난 옷 많음</button>
+                <button onclick="bingo(25)">집에 곰팡이 핀 곳 있음</button>
+            </div>
+            <input type="submit" value="테스트 완료" onclick=" result()">
+        </div>
+        <div id="result">
+            <div id="highLevel">
+                <h4>
+                    당신은 수저도 없습니다. <br>
+                    믿을건 몸둥아리뿐 열심히 노력해서 지금 상황이 개선되길 바랍니다.
+                </h4>
+                <img src="image/soilSpoon/highLevel.gif" alt="">
+            </div>
+            <div id="middleLevel">
+                <h4>
+                    당신은 흙수저의 표본입니다. <br>
+                    가능성이 없다고는 못하지만 그렇다고 있는것도 아닙니다.
+                </h4>
+                <img src="image/soilSpoon/middleLevel.png" alt="">
+            </div>
+            <div id="lowLevel">
+                <h4>
+                    당신은 그저 결함이 조금 있을뿐입니다. <br>
+                    의지와 신념만 있다면 개천에서 용용 할수도 있습니다. <br>
+                    사진과 같이 자신의 단점을 운동으로 극복한 사람처럼 말이죠
+                </h4>
+                <img src="image/soilSpoon/lowLevel.jpg" alt="">
+            </div>
+            <div id="not">
+                <h4>
+                    당신은 기만자 입니다. <br>
+                    기만자쉨 그만 비웃고 나가라!!
+                </h4>
+                <img src="image/soilSpoon/not.jpg" alt="">
+            </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<div class="addthis_inline_share_toolbox"></div>
+<input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+        </div>
+    </div>

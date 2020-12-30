@@ -1,0 +1,71 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="testWrapper">
+        <div id="testBox" style="background-color: silver;">
+            <div id="text"><b> 은수저 테스트 </b></div> 
+            <div id="bingoBoard">
+                <button onclick="bingo(1)">월 소득이 650만원 이상이다.</button>
+                <button onclick="bingo(2)">엄마,아빠 명의나 내 명의로 된 집이 수도권 내에 있다.</button>
+                <button onclick="bingo(3)">가족 스마트폰이 상위기종(90만원 이상)</button>
+                <button onclick="bingo(4)">엄마,아빠가 대기업에 다녔거나 다닌적이 있다.(자진퇴사,명예퇴직 해당)</button>
+                <button onclick="bingo(5)">학창시절에 엄마 아빠가 하고싶은 일을 하라고 했다.</button>
+                <button onclick="bingo(6)">엄마 아빠가 부장 이상의 직책에 있다.</button>
+                <button onclick="bingo(7)">2000cc급 이상의 중형차를 소유하고 있다.</button>
+                <button onclick="bingo(8)">학창시절때 학원을 3개 이상 다녔다.</button>
+                <button onclick="bingo(9)">밥 먹을때 고기반찬이 꼭 있다.</button>
+                <button onclick="bingo(10)">화장실 변기안에 벽돌이나 페트병이 없다.</button>
+                <button onclick="bingo(11)">학창 시절 때돈 문제로 걱정해본 적이 없다.</button>
+                <button onclick="bingo(12)">여름철에 에어컨을 걱정없이 튼다.</button>
+                <button onclick="bingo(13)">어릴적 물건을 부셔도 엄빠가 크게 안 혼냈다.</button>
+                <button onclick="bingo(14)">외국어를 3개이상 할 줄 안다.</button>
+                <button onclick="bingo(15)">브랜드 있는 옷을 주로 입니다.</button>
+                <button onclick="bingo(16)">일주일에 한번씩은 꼭 마트에서 10만원 이상 구매한다.</button>
+                <button onclick="bingo(17)">중딩때 학원비가 150만원 이상 들었다</button>
+                <button onclick="bingo(18)">초딩때 매일 문구점/pc방을 갔어도 돈이 떨어지지 않았다.</button>
+                <button onclick="bingo(19)">주로 구제 받는 사람이 아닌 구제 해주는 사람이다.</button>
+                <button onclick="bingo(20)">창업경험이나 창업준비를 여유있게 할 수 있다.</button>
+                <button onclick="bingo(21)">꿈이 있다. 만약 없어도 초조하지 않다.</button>
+                <button onclick="bingo(22)">2개이상의 악기류를 취미로 배웠다.</button>
+                <button onclick="bingo(23)">집에 은수저가 있다.</button>
+                <button onclick="bingo(24)">외식을 한달에 2~3이상 간다(김밥천국류 제외)</button>
+                <button onclick="bingo(25)">돼지고기를 먹을때 비계는 안먹는다.</button>
+            </div>
+            <input type="submit" value="테스트 완료" onclick=" result()">
+        </div>
+        <div id="result">
+            <div id="highLevel">
+                <h4>
+                    당신은 은수저계의 희망입니다. <br>
+                    탈은수저를 기원합니다!!
+                </h4>
+                <img src="image/silverSpoon/highLevel.jpg" alt="">
+            </div>
+            <div id="middleLevel">
+                <h4>
+                    부족함 없이 컸을 확률이 큽니다. <br>
+                    현실에 안주하지말고 노오력을 하란말이야!(꼰)
+                </h4>
+                <img src="image/silverSpoon/middleLevel.gif" alt="">
+            </div>
+            <div id="lowLevel">
+                <h4>
+                    당신의 은수저는 구부러졌습니다. <br>
+                    계속 구부러진 상태라면 언젠가는 부러질지도 모릅니다.
+                </h4>
+                <img src="image/silverSpoon/lowLevel.jpg" alt="">
+            </div>
+            <div id="not">
+                <h4>
+                    이 테스트는 당신을 측정 할수없습니다. <br>
+                    흑수저 테스트를 받아보시는건 어떨까요..?
+                </h4>
+                <img src="image/silverSpoon/not.jpg" alt="">
+            </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<div class="addthis_inline_share_toolbox"></div>
+<input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+        </div>
+    </div>
