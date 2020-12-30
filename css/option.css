@@ -21,6 +21,11 @@ body{
     background-color: white;
 }
 
+#adLongBox1{
+    width: 728px;
+    margin: 0 auto;
+}
+
 text{
     font-size:30px;
 }
