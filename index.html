@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +40,8 @@
         <title>테스트 저장소</title>
         <script src="javascript/fetch.js"></script>
         <script src="javascript/bingo.js"></script>
+        <script src="javascript/job-face.js"></script>
+        <script src="javascript/history.js"></script>
         <link rel="stylesheet" type="text/css" href="css/contents.css">
         <link rel="stylesheet" type="text/css" href="css/slider.css">
         <link rel="stylesheet" type="text/css" href="css/option.css">
@@ -50,42 +54,58 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+   
     <div id="mainlogo">
        <a href="index.html"> <img src="logo/testStorage.png"> </a>
     </div>
-
     <div id="spot">
         <div id="sliderWrapper">
             <div id="slider">
                 <li>  
-                    <a href="#goldSpoon" onclick="fth('contents/goldSpoon')">
+                    <div onclick="
+                    fth('contents/goldSpoon');
+                    window.history.pushState('', 'goldSpoon', 'goldSpoon' );
+                    ">
                     <img src="image/goldSpoon/slider.png" alt=""> 
                     <text><b> 금수저 테스트 </b></text>
-                    </a>
+                    </div>
                 </li> 
                 <li>  
-                    <a href="#silverSpoon" onclick="fth('contents/silverSpoon')">
+                    <div onclick="
+                        fth('contents/silverSpoon');
+                        window.history.pushState('', 'silverSpoon', 'silverSpoon' );
+                        ">
                 <img src="image/silverSpoon/slider.png" alt=""> 
                 <text><b> 은수저 테스트 </b></text>
-                </a>
+                </div>
                 </li> 
                 <li>  
-                    <a href="#soilSpoon" onclick="fth('contents/soilSpoon')">
+                    <div onclick="
+                        fth('contents/soilSpoon');
+                        window.history.pushState('', 'soilSpoon', 'soilSpoon' );
+                        ">
                         <img src="image/soilSpoon/slider.png" alt=""> 
                     <text><b> 흙수저 테스트 </b></text>
-                    </a>
+                    </div>
                 </li>
                 <li>  
-                    <a href="#otaku" onclick="fth('contents/otaku')">
+                    <div onclick="
+                        fth('contents/otaku');
+                        window.history.pushState('', 'otaku', 'otaku' );
+                        ">
                         <img src="image/otaku/slider.png" alt=""> 
                     <text><b> 오타쿠 테스트 </b></text>
+                    </div>
+                </li>
+                <li>  
+                    <a href="job-face.html" >
+                        <img src="image/job-face/slider.png" alt=""> 
+                    <text><b> 어울리는 직업 테스트 </b></text>
                     </a>
                 </li>
-                <li></li>
             </div>
         </div>
     </div>
-
 <div id="adLongBox1">
     <ins class="kakao_ad_area" style="display:none;" 
  data-ad-unit    = "DAN-wF6YoNaEQxefw4Ba" 
@@ -104,22 +124,31 @@
 
         <div id="contents">
             <li>  
-                <a href="#goldSpoon" onclick="fth('contents/goldSpoon')">
+                <div onclick="
+                    fth('contents/goldSpoon')
+                    window.history.pushState('', 'goldSpoon', 'goldSpoon' );
+                    ">
                <img src="image/goldSpoon/contents.png" alt=""> 
                <text><b> 금수저 테스트 </b></text>
-               </a>
+                </div>
            </li> 
            <li>  
-                <a href="#silverSpoon" onclick="fth('contents/silverSpoon')">
+                <div onclick="
+                    fth('contents/silverSpoon');
+                    window.history.pushState('', 'silverSpoon', 'silverSpoon' );
+                    ">
                 <img src="image/silverSpoon/contents.png" alt=""> 
                 <text><b> 은수저 테스트 </b></text>
-                </a>
+                </div>
            </li> 
            <li>  
-                <a href="#soilSpoon" onclick="fth('contents/soilSpoon')">
+                <div onclick="
+                    fth('contents/soilSpoon');
+                    window.history.pushState('', 'soilSpoon', 'soilSpoon' );
+                    ">
                 <img src="image/soilSpoon/contents.png" alt=""> 
                 <text><b> 흙수저 테스트 </b></text>
-                </a>
+                </div>
             </li> 
             <li>
                 <ins class="kakao_ad_area" style="display:none;" 
@@ -129,12 +158,20 @@
                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
             </li>
             <li>  
-                <a href="#otaku" onclick="fth('contents/otaku')">
+                <div onclick="
+                    fth('contents/otaku');
+                    window.history.pushState('', 'otaku', 'otaku' );
+                    ">
                 <img src="image/otaku/contents.png" alt=""> 
                 <text><b> 오타쿠 테스트 </b></text>
+                </div>
+            </li> 
+            <li>  
+                <a href="job-face.html" >
+                    <img src="image/job-face/contents.png" alt=""> 
+                <text><b> 어울리는 직업 테스트 </b></text>
                 </a>
             </li> 
-            <li></li>
             <li></li>
             <li></li>
             <li></li>

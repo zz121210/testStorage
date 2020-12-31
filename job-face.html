@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE4X1C4GLK"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZE4X1C4GLK');
+      </script>
+              <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K8JTXB9');</script>
+          <!-- End Google Tag Manager -->
+          <meta name="robots" content="index,follow">
+          <link rel="canonical" href="https://teststorage.ga/index.html">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5feb112352e012a1"></script>
+  
+          <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+          <link rel="icon" href="logo/favicon.ico" type="image/x-icon">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+          <meta name="google-site-verification" content="Ot35W3LcIO4S4gKYwmxHmULh4cBvFvGSli49_9AQgX8" />
+          <meta name="description" content="테스트 저장소는 심리테스트, 성격테스트, 금수저테스트, 은수저테스트, 흙수저테스트, 상황테스트등 가볍게 즐길거리로 가득합니다. ">
+          <!--네이버-->
+          <meta property="og:title" content="테스트 저장소">
+          <meta property="og:url" content="https://teststorage.ga/"> 
+          <meta property="og:type" content="website">
+          <meta property="og:image" content="logo\testStorage.png"> 
+          <meta property="og:site_name" content="테스트 저장소"> 
+          <meta property="og:description" content="테스트 저장소는 심리테스트, 성격테스트, 금수저테스트, 은수저테스트, 흙수저테스트, 상황테스트등 가볍게 즐길거리로 가득합니다.">
+          <!--네이버-->
+          <title>테스트 저장소</title>
+          <script src="javascript/fetch.js"></script>
+          <script src="javascript/bingo.js"></script>
+          <script src="javascript/job-face.js"></script>
+          <script src="javascript/history.js"></script>
+          <link rel="stylesheet" type="text/css" href="css/contents.css">
+          <link rel="stylesheet" type="text/css" href="css/slider.css">
+          <link rel="stylesheet" type="text/css" href="css/option.css">
+          <link rel="stylesheet" type="text/css" href="css/contents/bingo.css">
+          <script data-ad-client="ca-pub-5268353636573526" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/contents/image-upload.css">
+    <link rel="stylesheet" type="text/css" href="css/contents/spinner.css">
+    <script src="javascript/job-face.js"></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+
+    const URL = "https://teachablemachine.withgoogle.com/models/ZNgBY8Vnd/";
+
+    let model, labelContainer, maxPredictions,jobs
+
+    async function predict() {
+
+        document.querySelector('.loader').style.display="block";
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { 
+            labelContainer.appendChild(document.createElement("div"));
+        }
+
+        document.querySelector('.loader').style.display="none";
+        var image = document.getElementById("face-image")
+        const prediction = await model.predict(image,false);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+               "<div id='label-container-flex'><div id='label-container-text'>"+ prediction[i].className+ "</div><div class='numGraph'> " + prediction[i].probability.toFixed(2)*100+ "%</div></div>";
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+            console.log(prediction[i].probability.toFixed(2));
+
+        }
+    }
+</script>
+
+
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<div id="mainlogo">
+  <a href="index.html"> <img src="logo/testStorage.png"> </a>
+</div>
+<div id="spot">
+  <div id="testWrapper">
+    <div class="file-upload">
+
+      <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">사진 추가</button>
+
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+          <h3>사진을 올리고 예측 버튼을 눌러주세요.</h3>
+        </div>
+      </div>
+      <div class="file-upload-content">
+        <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+          <button type="button" onclick="removeUpload()" class="remove-image"> 다시 하기 <span class="image-title">Uploaded Image</span></button>
+        </div>
+      </div>
+      <button class="face-result" type="button" onclick="predict()">예측</button>
+      <div id="label-container"></div>
+      <div class="loader">Loading...</div>
+    </div>
+  </div>
+</div>
+
+<div id="contentsWrapper">
+  <div class="adBox1">
+      <script src="https://ads-partners.coupang.com/g.js"></script>
+      <script>
+          new PartnersCoupang.G({"id":397713,"template":"carousel","trackingCode":"AF5951821","width":"300","height":"400"});
+      </script>
+  </div>
+
+  <div id="contents">
+      <li>  
+          <div onclick="
+              fth('contents/goldSpoon')
+              window.history.pushState('', 'goldSpoon', 'goldSpoon' );
+              ">
+         <img src="image/goldSpoon/contents.png" alt=""> 
+         <text><b> 금수저 테스트 </b></text>
+          </div>
+     </li> 
+     <li>  
+          <div onclick="
+              fth('contents/silverSpoon');
+              window.history.pushState('', 'silverSpoon', 'silverSpoon' );
+              ">
+          <img src="image/silverSpoon/contents.png" alt=""> 
+          <text><b> 은수저 테스트 </b></text>
+          </div>
+     </li> 
+     <li>  
+          <div onclick="
+              fth('contents/soilSpoon');
+              window.history.pushState('', 'soilSpoon', 'soilSpoon' );
+              ">
+          <img src="image/soilSpoon/contents.png" alt=""> 
+          <text><b> 흙수저 테스트 </b></text>
+          </div>
+      </li> 
+      <li>
+          <ins class="kakao_ad_area" style="display:none;" 
+          data-ad-unit    = "DAN-JymjTi7Yyo2Q0QMK" 
+          data-ad-width   = "300" 
+          data-ad-height  = "250"></ins> 
+         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </li>
+      <li>  
+          <div onclick="
+              fth('contents/otaku');
+              window.history.pushState('', 'otaku', 'otaku' );
+              ">
+          <img src="image/otaku/contents.png" alt=""> 
+          <text><b> 오타쿠 테스트 </b></text>
+          </div>
+      </li> 
+      <li>  
+        <a href="job-face.html" >
+            <img src="image/job-face/contents.png" alt=""> 
+        <text><b> 어울리는 직업 테스트 </b></text>
+        </a>
+      </li>   
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </div>
+  <div class="adBox2">
+      <script src="https://ads-partners.coupang.com/g.js"></script>
+      <script>
+          new PartnersCoupang.G({"id":397097,"template":"carousel","trackingCode":"AF5951821","width":"300","height":"400"});
+      </script>
+  </div>
+</body>
+</html>
+
+
+
+<!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
