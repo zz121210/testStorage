@@ -43,6 +43,7 @@
           <link rel="stylesheet" type="text/css" href="css/contents.css">
           <link rel="stylesheet" type="text/css" href="css/slider.css">
           <link rel="stylesheet" type="text/css" href="css/option.css">
+          <link rel="stylesheet" type="text/css" href="css/header.css">
           <link rel="stylesheet" type="text/css" href="css/contents/bingo.css">
           <script data-ad-client="ca-pub-5268353636573526" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
@@ -100,9 +101,11 @@
 
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-<div id="mainlogo">
-  <a href="index.html"> <img src="logo/testStorage.png"> </a>
-</div>
+<header>
+  <div id="mainlogo">
+      <a href="index.html"> <img src="logo/testStorage.png"> </a>
+  </div>
+</header>
 <div id="spot">
   <div id="testWrapper">
     <div class="file-upload">
@@ -134,79 +137,59 @@ data-ad-width   = "728"
 data-ad-height  = "90"></ins> 
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 </div>
+
+
+
+
+
+
+
+
+
 <div id="contentsWrapper">
-  <div class="adBox1">
-      <script src="https://ads-partners.coupang.com/g.js"></script>
-      <script>
-          new PartnersCoupang.G({"id":397713,"template":"carousel","trackingCode":"AF5951821","width":"300","height":"400"});
-      </script>
+        
+
+  <div class="adBox2">
+      <ins class="kakao_ad_area" style="display:none;" 
+data-ad-unit    = "DAN-gaCvln4Vc2SqAWY2" 
+data-ad-width   = "160" 
+data-ad-height  = "600"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
   </div>
+  
 
   <div id="contents">
-      <li>  
-          <div onclick="
-              fth('contents/goldSpoon')
-              window.history.pushState('', 'goldSpoon', 'goldSpoon' );
-              ">
-         <img src="image/goldSpoon/contents.png" alt=""> 
-         <text><b> 금수저 테스트 </b></text>
-          </div>
-     </li> 
-     <li>  
-          <div onclick="
-              fth('contents/silverSpoon');
-              window.history.pushState('', 'silverSpoon', 'silverSpoon' );
-              ">
-          <img src="image/silverSpoon/contents.png" alt=""> 
-          <text><b> 은수저 테스트 </b></text>
-          </div>
-     </li> 
-     <li>  
-          <div onclick="
-              fth('contents/soilSpoon');
-              window.history.pushState('', 'soilSpoon', 'soilSpoon' );
-              ">
-          <img src="image/soilSpoon/contents.png" alt=""> 
-          <text><b> 흙수저 테스트 </b></text>
-          </div>
-      </li> 
-      <li>
-          <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-JymjTi7Yyo2Q0QMK" 
-          data-ad-width   = "300" 
-          data-ad-height  = "250"></ins> 
-         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </li>
-      <li>  
-          <div onclick="
-              fth('contents/otaku');
-              window.history.pushState('', 'otaku', 'otaku' );
-              ">
-          <img src="image/otaku/contents.png" alt=""> 
-          <text><b> 오타쿠 테스트 </b></text>
-          </div>
-      </li> 
-      <li>  
-        <a href="job-face.html" >
-            <img src="image/job-face/contents.png" alt=""> 
-        <text><b> 어울리는 직업 테스트 </b></text>
-        </a>
-      </li>   
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-  </div>
-  <div class="adBox2">
+      <script>
+          fetch('contents/list').then(function(response){
+              response.text().then(function(text){
+                  let title = ['여자 테스트','오타쿠 테스트','흙수저 테스트','은수저 테스트','금수저 테스트'];
+                  var items = text.split(',');
+                  var i = 0;
+                  var tags = '';
+                  while(i<items.length){
+                      var item = items[i];
+                      const tag =
+                      '<li> <div onclick="fth(\'contents/'+item+'\'); window.history.pushState(\'\', \'\', \''+item+'\' );">'+
+                      '<img src="image/'+item+'/contents.png">'+
+                      '<text><b>'+title[i]+' </b></text>'+
+                      '</div></li>';
+                      tags = tags + tag;
+                      i++;
+                  }
+                  document.querySelector('#contents').innerHTML = tags;
+              })
+          })
+
+      </script>
+      </div>
+
+
+      <div class="adBox2">
       <script src="https://ads-partners.coupang.com/g.js"></script>
       <script>
-          new PartnersCoupang.G({"id":397097,"template":"carousel","trackingCode":"AF5951821","width":"300","height":"400"});
+          new PartnersCoupang.G({"id":397097,"template":"carousel","trackingCode":"AF5951821","width":"160","height":"600"});
       </script>
+      </div>
   </div>
 </body>
 </html>
