@@ -31,7 +31,7 @@
                     document.querySelector('#middleLevel').style.display='block';
                     document.querySelector('#lowLevel').style.display='none';
                     document.querySelector('#not').style.display='none';
-                }else if(count >= 1){
+                }else if(count >= 4){
                     document.querySelector('#highLevel').style.display='none';
                     document.querySelector('#middleLevel').style.display='none';
                     document.querySelector('#lowLevel').style.display='block';
