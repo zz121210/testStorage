@@ -6,17 +6,19 @@
 #contents{
     display:flex;
     flex-flow:wrap;
-    margin:0 auto;
     padding:20px;
-    width:1000px;
+    width:1250px;
     box-shadow: 1px 1px 10px 1px gray;
     background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin:0 auto;
 }
 
 #contents>li{
     cursor: pointer;
-    width:300px;
-    height: 250px;
+    width:225px;
+    height: 180px;
     margin-left:20px;
     margin-bottom:20px;
     background: white;
@@ -24,22 +26,9 @@
     text-align: center;
 }
 
+
 #contents>li img{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 150px;
 }
 
-@media ( max-width: 1665px ) {
-    #contents{
-        width: 659px;
-        flex-shrink: 0;
-
-    }
-}
-
-@media ( max-width: 900px ) {
-    #contents{
-        width: 724px;
-        flex-shrink: 0;
-    }
-}

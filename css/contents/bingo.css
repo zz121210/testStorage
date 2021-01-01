@@ -20,8 +20,8 @@
             display:flex;
             flex-flow:wrap;
             margin:0 auto;
-            width:625px;
-            height:625px; 
+            width:630px;
+            height:630x; 
         }
         #bingoBoard button{
             width:120px;
@@ -38,6 +38,7 @@
             background-color: white;
             margin:2px;
             color:black;
+            font-size:15px;
         }
 
         #testBox input[type="submit"]{
