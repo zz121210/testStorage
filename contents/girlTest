@@ -1,0 +1,72 @@
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="testWrapper">
+        <div id="testBox" style="background: url('image/girlTest/bingoImage.png');">
+            <div id="text"><b> 여자력 테스트 </b></div> 
+            <div id="bingoBoard">
+                <button onclick="bingo(1)">잘 먹음</button>
+                <button onclick="bingo(2)">잘 잠</button>
+                <button onclick="bingo(3)">잘 놈</button>
+                <button onclick="bingo(4)">건강함</button>
+                <button onclick="bingo(5)">성욕 넘침</button>
+                <button onclick="bingo(6)">목청 큼</button>
+                <button onclick="bingo(7)">씩씩함</button>
+                <button onclick="bingo(8)">입 무거움</button>
+                <button onclick="bingo(9)">요리 못함</button>
+                <button onclick="bingo(10)">집안일 싫어함</button>
+                <button onclick="bingo(11)">주말마다 오후 기상</button>
+                <button onclick="bingo(12)">치맥을 좋아해</button>
+                <button onclick="bingo(13)">야식을 즐겨 먹음</button>
+                <button onclick="bingo(14)">의리 있음</button>
+                <button onclick="bingo(15)">승부욕 강해</button>
+                <button onclick="bingo(16)">손을 잘씻는다</button>
+                <button onclick="bingo(17)">남자없이 잘만 살아</button>
+                <button onclick="bingo(18)">성취욕이 높아</button>
+                <button onclick="bingo(19)">끈기 있음</button>
+                <button onclick="bingo(20)">자립심 강함</button>
+                <button onclick="bingo(21)">자신감 넘침</button>
+                <button onclick="bingo(22)">책임감 강함</button>
+                <button onclick="bingo(23)">원대한 야망</button>
+                <button onclick="bingo(24)">정의로움</button>
+                <button onclick="bingo(25)">똑똑함</button>
+            </div>
+            <input type="submit" value="테스트 완료" onclick=" result()">
+        </div>
+        <div id="result">
+            <div id="highLevel">
+                <h4>
+                    당신은 상여자 입니다. <br> 
+                
+                </h4>
+                <img src="image/girlTest/highLevel.jpg" alt="">
+            </div>
+            <div id="middleLevel">
+                <h4>
+                    당신은 개념 충만한 여자여자 <br> 
+ 
+                </h4>
+                <img src="image/girlTest/middleLevel.jpg" alt="">
+            </div>
+            <div id="lowLevel">
+                <h4>
+                    좀만더 노력하자! <br> 
+
+                </h4>
+                <img src="image/girlTest/lowLevel.jpg" alt="">
+            </div>
+            <div id="not">
+                <h4>
+                    해당이 아무것도 안되는 당신은 중성임<br>
+                </h4>
+                <img src="image/girlTest/not.png" alt="">
+            </div>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_bnxd"></div>
+            
+<input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+        </div>
+    </div>

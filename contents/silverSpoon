@@ -4,7 +4,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="testWrapper">
-        <div id="testBox" style="background-color: silver;">
+        <div id="testBox" style="background: url('image/silverSpoon/bingoImage.png');">
             <div id="text"><b> 은수저 테스트 </b></div> 
             <div id="bingoBoard">
                 <button onclick="bingo(1)">월 소득이 650만원 이상이다.</button>

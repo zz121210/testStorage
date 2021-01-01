@@ -5,7 +5,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="testWrapper">
-        <div id="testBox">
+        <div id="testBox" style="background: url('image/goldSpoon/bingoImage.png');">
             <div id="text"><b> 금수저 테스트 </b></div> 
             <div id="bingoBoard">
                 <button onclick="bingo(1)">자가가 시가 20억 이상이다</button>
