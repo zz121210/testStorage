@@ -79,7 +79,7 @@
                 <li>  
                     <div onclick="
                     fth('contents/girlTest');
-                    window.history.pushState('', '', 'girlTest' );
+                    window.history.pushState('girlTest', '', 'girlTest' );
                     
                     ">
                     <img src="image/girlTest/slider.png" alt=""> 
@@ -97,7 +97,7 @@
                 <li>  
                     <div onclick="
                         fth('contents/silverSpoon');
-                        window.history.pushState('', '', 'silverSpoon' );
+                        window.history.pushState('silverSpoon', '', 'silverSpoon' );
                         ">
                 <img src="image/silverSpoon/slider.png" alt=""> 
                 <text><b> 은수저 테스트 </b></text>
@@ -107,7 +107,7 @@
                 <li>  
                     <div onclick="
                         fth('contents/soilSpoon');
-                        window.history.pushState('', '', 'soilSpoon' );
+                        window.history.pushState('soilSpoon', '', 'soilSpoon' );
                         ">
                         <img src="image/soilSpoon/slider.png" alt=""> 
                     <text><b> 흙수저 테스트 </b></text>
@@ -116,7 +116,7 @@
                 <li>  
                     <div onclick="
                         fth('contents/otaku');
-                        window.history.pushState('', '', 'otaku' );
+                        window.history.pushState('otaku', '', 'otaku' );
                         ">
                         <img src="image/otaku/slider.png" alt=""> 
                     <text><b> 오타쿠 테스트 </b></text>
@@ -170,7 +170,7 @@
                         while(i<items.length){
                             var item = items[i];
                             const tag =
-                            '<li> <div onclick="fth(\'contents/'+item+'\'); window.history.pushState(\'\', \'\', \''+item+'\' );">'+
+                            '<li> <div onclick="fth(\'contents/'+item+'\'); window.history.pushState(\''+item+'\', \'\', \''+item+'\' );">'+
                             '<img src="image/'+item+'/contents.png">'+
                             '<text><b>'+title[i]+' </b></text>'+
                             '</div></li>';
