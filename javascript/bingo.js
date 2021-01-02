@@ -31,7 +31,7 @@
                     document.querySelector('#middleLevel').style.display='block';
                     document.querySelector('#lowLevel').style.display='none';
                     document.querySelector('#not').style.display='none';
-                }else if(count >= 4){
+                }else if(count > 3){
                     document.querySelector('#highLevel').style.display='none';
                     document.querySelector('#middleLevel').style.display='none';
                     document.querySelector('#lowLevel').style.display='block';
@@ -42,9 +42,15 @@
                     document.querySelector('#lowLevel').style.display='none';
                     document.querySelector('#not').style.display='block';
                 }
+
+
+                new PartnersCoupang.G({"id":401008,"template":"carousel","trackingCode":"AF5951821","width":"225","height":"300"});
+                document.querySelector('#resultAdBox').style.display='block';
+                
         }
 
         function retry(){
             document.querySelector('#testBox').style.display='block';
             document.querySelector('#result').style.display='none';
+            document.querySelector('#resultAdBox').style.display='none';
         }
