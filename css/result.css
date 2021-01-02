@@ -1,0 +1,41 @@
+#testWrapper{
+    display:flex;
+    box-shadow: 1px 1px 10px 1px gray;
+    height:780px;
+    margin:20px;
+    background-color: white;
+    padding-top:30px;
+}
+
+#resultWrapper{
+    display:flex;
+    margin:0 auto;
+}
+
+#resultAdBox{
+    display:none;
+    margin-top:20px;
+    margin-left:50px;
+    border:1px dotted;
+    width: 225px;
+    height: 700px;
+    text-align: center;
+}
+
+#resultAdBox>li{
+    cursor: pointer;
+    width:225px;
+    height: 180px;
+    margin-bottom:20px;
+    background: white;
+    border:1px dotted;
+    text-align: center;
+
+}
+
+#resultAdBox>li img{
+    max-width: 250px;
+    max-height: 150px;
+}
+
+
