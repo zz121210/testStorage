@@ -1,0 +1,96 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JTXB9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="testWrapper">
+    <div id="resultWrapper">
+        <div id="testBox" style="background: url('image/realTest/bingoImage.png');">
+            <div id="text"><b> 리얼충 테스트 </b></div> 
+            <div id="bingoBoard">
+                <button onclick="bingo(1)">연애를 한번이라도 함 (인터넷 제외)</button>
+                <button onclick="bingo(2)">한달에 한번 친구들끼리 영화 보러감.</button>
+                <button onclick="bingo(3)">길거리에서 번호 따여봄</button>
+                <button onclick="bingo(4)">덕밍아웃/트밍아웃을 해도 아무 상관없음</button>
+                <button onclick="bingo(5)">일주일에 한번 술자리 혹은 맛집을 찾아감</button>
+                <button onclick="bingo(6)">여행을 친구끼리 감(인터넷 제외)</button>
+                <button onclick="bingo(7)">워터파크를 가봄</button>
+                <button onclick="bingo(8)">스티커 사진을 2번 이상 찍은적이 있음</button>
+                <button onclick="bingo(9)">데이트를 딱 한번 해봄</button>
+                <button onclick="bingo(10)">클럽을 가봄</button>
+                <button onclick="bingo(11)">옷 스타일이 4종류 이상 가지고 있음</button>
+                <button onclick="bingo(12)">카톡 친구 150명 이상</button>
+                <button onclick="bingo(13)">친한 여동생이 있음(인터넷 제외)</button>
+                <button onclick="bingo(14)">이성 사람이랑 술 마셔봄(인터넷 제외)</button>
+                <button onclick="bingo(15)">자기 집에 친구를 데려온 적이 있음.</button>
+                <button onclick="bingo(16)">실친한테 섹드립을 친적이 있음</button>
+                <button onclick="bingo(17)">축제 하는데 같이 가본적이 있음</button>
+                <button onclick="bingo(18)">이성 친구랑 손 잡아본적 있음</button>
+                <button onclick="bingo(19)">같이 밤 새면서 노는 친구가 있음</button>
+                <button onclick="bingo(20)">여자한테 고백 받아봄</button>
+                <button onclick="bingo(21)">빼빼로데이때 뺴빼로 받음</button>
+                <button onclick="bingo(22)">'뭐하냐'라고 카톡 한번이라도 옴</button>
+                <button onclick="bingo(23)">하루에 한번씩 친구한테 통화옴(7년 이상)</button>
+                <button onclick="bingo(24)">데이터 사용량보다 통화 사용량이 많음</button>
+                <button onclick="bingo(25)">정말 친한 친구가 3명이상 있음</button>
+            </div>
+            <input type="submit" value="테스트 완료" onclick=" result()">
+        </div>
+        <div id="result">
+            <div id="highLevel">
+                <h4>
+                    당신은 인싸중에 인싸지만 자신을 아싸라고 소개하며 <br>
+                    아싸를 기만하는 자 입니다.
+                </h4>
+                <img src="image/realTest/highLevel.gif" alt="">
+            </div>
+            <div id="middleLevel">
+                <h4>
+                    당신은 인간관계에 있어서는 정말 잘하고 있네요.  <br>
+                </h4>
+                <img src="image/realTest/middleLevel.png" alt="">
+            </div>
+            <div id="lowLevel">
+                <h4>
+                    마음 잘맞는 친구 한둘이 여러 친구들보다 더 좋을때가 있지요! <br>
+                </h4>
+                <img src="image/realTest/lowLevel.jpg" alt="">
+            </div>
+            <div id="not">
+                <h4>
+                    체크를 별로 하지 못했어도 괜찮아요 빙고일 뿐이니까요 <br>
+                    친구보다 이상을 추구하는 당신 그 자체만으로도 멋집니다! 
+                </h4>
+                <img src="image/realTest/not.jpg" alt="">
+            </div>
+
+                
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_mlup"></div>
+                <input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+                
+        </div>
+        <div id="resultAdBox">
+        <text> 이런 테스트는 어때요? </text>
+                <li>
+                    <div onclick="
+                        fth('contents/goldSpoon');
+                        window.history.pushState('goldSpoon', '', 'goldSpoon' );
+                        ">
+                        <img src="image/goldSpoon/contents.png" alt=""> 
+                        <text><b> 금수저 테스트 </b></text>
+                        </div>
+                </li>
+                <li>  
+                    <a href="job-face.html" >
+                        <img src="image/job-face/contents.png" alt=""> 
+                        <text><b> 관상으로 직업 테스트 </b></text>
+                    </a>
+                </li>
+                        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":401008,"template":"carousel","trackingCode":"AF5951821","width":"225","height":"300"});
+        </script>
+        </div>
+        </div>
+    </div>
