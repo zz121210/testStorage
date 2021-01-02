@@ -4,6 +4,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="testWrapper">
+    <div id="resultWrapper">
         <div id="testBox" style="background: url('image/otaku/bingoImage.png');">
             <div id="text"><b> 오타쿠 테스트 </b></div> 
             <div id="bingoBoard">
@@ -70,5 +71,28 @@
                 <div class="addthis_inline_share_toolbox_mlup"></div>
                 <input id="retry" type="submit" value="재시도 하기" onclick="retry()">
                 
+        </div>
+        <div id="resultAdBox">
+        <text> 이런 테스트는 어때요? </text>
+                <li>
+                    <div onclick="
+                        fth('contents/silverSpoon');
+                        window.history.pushState('silverSpoon', '', 'silverSpoon' );
+                        ">
+                        <img src="image/silverSpoon/contents.png" alt=""> 
+                        <text><b> 은수저 테스트 </b></text>
+                        </div>
+                </li>
+                <li>  
+                    <a href="job-face.html" >
+                        <img src="image/job-face/contents.png" alt=""> 
+                        <text><b> 관상으로 직업 테스트 </b></text>
+                    </a>
+                </li>
+                        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":401008,"template":"carousel","trackingCode":"AF5951821","width":"225","height":"300"});
+        </script>
+        </div>
         </div>
     </div>

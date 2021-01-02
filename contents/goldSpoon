@@ -5,69 +5,93 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="testWrapper">
-        <div id="testBox" style="background: url('image/goldSpoon/bingoImage.png');">
-            <div id="text"><b> 금수저 테스트 </b></div> 
-            <div id="bingoBoard">
-                <button onclick="bingo(1)">자가가 시가 20억 이상이다</button>
-                <button onclick="bingo(2)">세뱃돈을 100만원 넘게 받아본 적 있다.</button>
-                <button onclick="bingo(3)">부모님이 정기적으로 대학병원에서 검강검진을 받는다.</button>
-                <button onclick="bingo(4)">알바를 한번도 안해봤다.</button>
-                <button onclick="bingo(5)">집에 화장실이 3개 이상이다.</button>
-                <button onclick="bingo(6)">집에 드레스룸과 파우더룸이 있다.</button>
-                <button onclick="bingo(7)">부모님 혹은 본인이 골프,승마 같은 취미 생활을 한다.</button>
-                <button onclick="bingo(8)">무엇인가를 하려고 할때 적어도 돈 때문에 걱정해 본적이 없다.</button>
-                <button onclick="bingo(9)">부모님 월 순소득이 2000만원 이상이다.</button>
-                <button onclick="bingo(10)">부모님 명의로 된 건물이 있다.</button>
-                <button onclick="bingo(11)">백화점에서 옷을 자주 산다.</button>
-                <button onclick="bingo(12)">부모님이 의사, 판검사, 중소기업 사장, 대기업 임원이다.</button>
-                <button onclick="bingo(13)">호텔뷔페나 비싼 레스토랑에서 가족단위의 외식을 자주 갖는다.</button>
-                <button onclick="bingo(14)">부모님이 뮤지컬, 연주회, 전시회를 주로 다니신다.</button>
-                <button onclick="bingo(15)">사립 초등학교 출신이다.</button>
-                <button onclick="bingo(16)">호텔에서 열리는 파티에 부모님을 따라 가 본 적이 있다.</button>
-                <button onclick="bingo(17)">어머니 옷장에 500만원 이상의 명품백이 5개 이상 있다.</button>
-                <button onclick="bingo(18)">아버지가 100만원 이상인 시계를 차신다.</button>
-                <button onclick="bingo(19)">집에 방이 (드레스룸 파우더룸 미포함) 5개 이상이다.</button>
-                <button onclick="bingo(20)">가사도우미를 쓴다.</button>
-                <button onclick="bingo(21)">해외여행을 자주 다닌다.</button>
-                <button onclick="bingo(22)">부동산 재산이 10억 이상 있다.</button>
-                <button onclick="bingo(23)">대학생의 경우 한달 용돈이 100만원 이상이다.</button>
-                <button onclick="bingo(24)">집에 차가 3대 이상이다.</button>
-                <button onclick="bingo(25)">학원이나 과외를 한달에 200만원 이상 다닌다.</button>
+        <div id="resultWrapper">
+            <div id="testBox" style="background: url('image/goldSpoon/bingoImage.png');">
+                <div id="text"><b> 금수저 테스트 </b></div> 
+                <div id="bingoBoard">
+                    <button onclick="bingo(1)">자가가 시가 20억 이상이다</button>
+                    <button onclick="bingo(2)">세뱃돈을 100만원 넘게 받아본 적 있다.</button>
+                    <button onclick="bingo(3)">부모님이 정기적으로 대학병원에서 검강검진을 받는다.</button>
+                    <button onclick="bingo(4)">알바를 한번도 안해봤다.</button>
+                    <button onclick="bingo(5)">집에 화장실이 3개 이상이다.</button>
+                    <button onclick="bingo(6)">집에 드레스룸과 파우더룸이 있다.</button>
+                    <button onclick="bingo(7)">부모님 혹은 본인이 골프,승마 같은 취미 생활을 한다.</button>
+                    <button onclick="bingo(8)">무엇인가를 하려고 할때 적어도 돈 때문에 걱정해 본적이 없다.</button>
+                    <button onclick="bingo(9)">부모님 월 순소득이 2000만원 이상이다.</button>
+                    <button onclick="bingo(10)">부모님 명의로 된 건물이 있다.</button>
+                    <button onclick="bingo(11)">백화점에서 옷을 자주 산다.</button>
+                    <button onclick="bingo(12)">부모님이 의사, 판검사, 중소기업 사장, 대기업 임원이다.</button>
+                    <button onclick="bingo(13)">호텔뷔페나 비싼 레스토랑에서 가족단위의 외식을 자주 갖는다.</button>
+                    <button onclick="bingo(14)">부모님이 뮤지컬, 연주회, 전시회를 주로 다니신다.</button>
+                    <button onclick="bingo(15)">사립 초등학교 출신이다.</button>
+                    <button onclick="bingo(16)">호텔에서 열리는 파티에 부모님을 따라 가 본 적이 있다.</button>
+                    <button onclick="bingo(17)">어머니 옷장에 500만원 이상의 명품백이 5개 이상 있다.</button>
+                    <button onclick="bingo(18)">아버지가 100만원 이상인 시계를 차신다.</button>
+                    <button onclick="bingo(19)">집에 방이 (드레스룸 파우더룸 미포함) 5개 이상이다.</button>
+                    <button onclick="bingo(20)">가사도우미를 쓴다.</button>
+                    <button onclick="bingo(21)">해외여행을 자주 다닌다.</button>
+                    <button onclick="bingo(22)">부동산 재산이 10억 이상 있다.</button>
+                    <button onclick="bingo(23)">대학생의 경우 한달 용돈이 100만원 이상이다.</button>
+                    <button onclick="bingo(24)">집에 차가 3대 이상이다.</button>
+                    <button onclick="bingo(25)">학원이나 과외를 한달에 200만원 이상 다닌다.</button>
+                </div>
+                <input type="submit" value="테스트 완료" onclick=" result()">
             </div>
-            <input type="submit" value="테스트 완료" onclick=" result()">
-        </div>
-        <div id="result">
-            <div id="highLevel">
-                <h4>
-                    당신은 금수저 오브 금수저 입니다. <br> 
-                    당신의 재산은 세상의 영향을 끼칠 정도네요.
-                </h4>
-                <img src="image/goldSpoon/highLevel.png" alt="">
-            </div>
-            <div id="middleLevel">
-                <h4>
-                    당신은 금수저 반열에 있는 사람입니다. <br> 
-                    졸부들과는 다르지요. 
-                </h4>
-                <img src="image/goldSpoon/middleLevel.jpg" alt="">
-            </div>
-            <div id="lowLevel">
-                <h4>
-                    당신의 금수저는 금박지로 만든 수저와 같습니다. <br> 
-                    당신의 금수저가 잘버티고 있는지 체크해볼 시간입니다. 
-                </h4>
-                <img src="image/goldSpoon/lowLevel.jpg" alt="">
-            </div>
-            <div id="not">
-                <h4>
-                    금수저에 아무것도 해당되지 않는 당신.. 괜찮습니다. <br> 
-                    어떤수저를 물고 태어나도 자신의 수저는 자기자신이 만드는거니까요.
-                </h4>
-                <img src="image/goldSpoon/not.jpg" alt="">
-            </div>
+            <div id="result">
+                <div id="highLevel">
+                    <h4>
+                        당신은 금수저 오브 금수저 입니다. <br> 
+                        당신의 재산은 세상의 영향을 끼칠 정도네요.
+                    </h4>
+                    <img src="image/goldSpoon/highLevel.png" alt="">
+                </div>
+                <div id="middleLevel">
+                    <h4>
+                        당신은 금수저 반열에 있는 사람입니다. <br> 
+                        졸부들과는 다르지요. 
+                    </h4>
+                    <img src="image/goldSpoon/middleLevel.jpg" alt="">
+                </div>
+                <div id="lowLevel">
+                    <h4>
+                        당신의 금수저는 금박지로 만든 수저와 같습니다. <br> 
+                        당신의 금수저가 잘버티고 있는지 체크해볼 시간입니다. 
+                    </h4>
+                    <img src="image/goldSpoon/lowLevel.jpg" alt="">
+                </div>
+                <div id="not">
+                    <h4>
+                        금수저에 아무것도 해당되지 않는 당신.. 괜찮습니다. <br> 
+                        어떤수저를 물고 태어나도 자신의 수저는 자기자신이 만드는거니까요.
+                    </h4>
+                    <img src="image/goldSpoon/not.jpg" alt="">
+                </div>
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_bnxd"></div>
             
-<input id="retry" type="submit" value="재시도 하기" onclick="retry()">
-        </div>
+            <input id="retry" type="submit" value="재시도 하기" onclick="retry()">
+            </div>
+            <div id="resultAdBox">
+            <text> 이런 테스트는 어때요? </text>
+                <li>
+                    <div onclick="
+                        fth('contents/soilSpoon');
+                        window.history.pushState('soilSpoon', '', 'soilSpoon' );
+                        ">
+                        <img src="image/soilSpoon/contents.png" alt=""> 
+                    <text><b> 흙수저 테스트 </b></text>
+                    </div>
+                </li>
+                <li>  
+                    <a href="job-face.html" >
+                        <img src="image/job-face/contents.png" alt=""> 
+                        <text><b> 관상으로 직업 테스트 </b></text>
+                    </a>
+                </li>
+                        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":401008,"template":"carousel","trackingCode":"AF5951821","width":"225","height":"300"});
+        </script>
+            </div>
+        <div
     </div>
